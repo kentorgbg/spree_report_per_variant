@@ -1,0 +1,35 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:my_new_report) %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <li><%= link_to_with_icon 'icon-arrow-left', Spree.t(:back_to_reports_list), spree.admin_reports_url, :class => 'button' %></li>
+<% end %>
+
+
+<table class="admin-report" data-hook="unavailable_products">
+  <thead>
+    <tr>
+  	<th> produkt_id </th>
+  	<th> produkt_name </th>
+  	<th> variant_id </th>
+  	<th> sku </th>
+  	<th> antal </th>
+    </tr>
+  </thead>
+	<tbody>
+
+  <% @products.each do |product, variants| %>
+		  <% variants.each do |variant, quantity| %>
+				  <tr class="align-center">
+						  <td><%= product.id %></td>
+						  <td><%= product.name %></td>
+						  <td><%= variant.id %></td>
+						  <td><%= variant.sku %></td>
+						  <td><%= quantity %></td>
+				  </tr>
+			<% end %>
+  <% end %>
+  </tbody>
+</table>
+

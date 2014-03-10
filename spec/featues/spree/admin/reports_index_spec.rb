@@ -7,8 +7,12 @@ feature 'List available reports', js: true do
   context 'elements' do
     scenario 'has configuration tab' do
       visit spree.admin_reports_path
-      #click_link 'Configuration'
-      #expect(page).to have_text 'SOCIAL AUTHENTICATION METHODS'
+     
+      # Title
+      expect(page).to have_text(Spree.t(:my_new_report))
+
+      # Description
+      expect(page).to have_text(Spree.t(:my_new_report_description))
     end
   end
 

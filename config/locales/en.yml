@@ -2,5 +2,6 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
-  my_new_report: "My new report"
+  spree:
+    my_new_report: "My new report"
+    my_new_report_description: "Count order per variant for each product"

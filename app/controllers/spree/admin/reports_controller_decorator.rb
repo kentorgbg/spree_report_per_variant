@@ -27,7 +27,7 @@ Spree::Admin::ReportsController.class_eval do
   protected
 
   def setup_reporting_per_variant
-    Spree::Admin::ReportsController.add_available_report!(:my_new_report)
+    Spree::Admin::ReportsController.add_available_report!(:my_new_report, :my_new_report_description)
   end
 
 end

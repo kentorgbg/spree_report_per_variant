@@ -9,10 +9,10 @@ feature 'List available reports', js: true do
       visit spree.admin_reports_path
      
       # Title
-      expect(page).to have_text(Spree.t(:my_new_report))
+      expect(page).to have_text(Spree.t(:report_per_variant))
 
       # Description
-      expect(page).to have_text(Spree.t(:my_new_report_description))
+      expect(page).to have_text(Spree.t(:report_per_variant_description))
     end
   end
 

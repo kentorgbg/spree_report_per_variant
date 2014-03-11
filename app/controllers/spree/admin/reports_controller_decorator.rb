@@ -1,7 +1,7 @@
 Spree::Admin::ReportsController.class_eval do
   before_filter :setup_reporting_per_variant, only: [:index]
 
-  def my_new_report
+  def report_per_variant
     
     @products = {}
     
@@ -27,7 +27,7 @@ Spree::Admin::ReportsController.class_eval do
   protected
 
   def setup_reporting_per_variant
-    Spree::Admin::ReportsController.add_available_report!(:my_new_report, :my_new_report_description)
+    Spree::Admin::ReportsController.add_available_report!(:report_per_variant, :report_per_variant_description)
   end
 
 end

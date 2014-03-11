@@ -3,5 +3,5 @@
 
 en:
   spree:
-    my_new_report: "My new report"
-    my_new_report_description: "Count order per variant for each product"
+    report_per_variant: "Report per variant"
+    report_per_variant_description: "Report based on total number of orders per variants"

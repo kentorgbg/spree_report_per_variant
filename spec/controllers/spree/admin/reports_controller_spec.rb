@@ -10,9 +10,9 @@ describe Spree::Admin::ReportsController, :type => :controller  do
     end
   end
 
-  describe 'GET my_new_report' do
+  describe 'GET report_per_variant page' do
     it 'should be ok' do
-      spree_get :my_new_report
+      spree_get :report_per_variant
       response.should be_ok
     end
   end

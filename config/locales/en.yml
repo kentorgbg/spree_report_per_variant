@@ -5,3 +5,9 @@ en:
   spree:
     report_per_variant: "Report per variant"
     report_per_variant_description: "Report based on total number of orders per variants"
+    report_per_variant_headers:
+        product_id: "Product ID"
+        produkt_name: "Product Name"
+        variant_id: "Variant ID"
+        sku: "SKU"
+        quantity: "Quantity"

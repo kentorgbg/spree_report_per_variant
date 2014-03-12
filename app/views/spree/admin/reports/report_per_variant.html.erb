@@ -10,11 +10,11 @@
 <table class="admin-report" data-hook="unavailable_products">
   <thead>
     <tr>
-  	<th> produkt_id </th>
-  	<th> produkt_name </th>
-  	<th> variant_id </th>
-  	<th> sku </th>
-  	<th> antal </th>
+			<th> <%= Spree.t("report_per_variant_headers.product_id") %> </th>
+			<th> <%= Spree.t("report_per_variant_headers.name") %> </th>
+			<th> <%= Spree.t("report_per_variant_headers.variant_id") %> </th>
+			<th> <%= Spree.t("report_per_variant_headers.sku") %> </th>
+			<th> <%= Spree.t("report_per_variant_headers.quantity") %> </th>
     </tr>
   </thead>
 	<tbody>
@@ -32,4 +32,3 @@
   <% end %>
   </tbody>
 </table>
-

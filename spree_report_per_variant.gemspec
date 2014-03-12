@@ -3,13 +3,12 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_report_per_variant'
   s.version     = '2.1.4'
-  s.summary     = 'Add gem summary here'
-  s.description = 'Add (optional) gem description here'
+  s.summary     = 'Creates a custom report for aggregating per sold variant'
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Patrik Johansson'
   s.email     = 'patrik.johansson@kentor.se'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.homepage  = 'https://github.com/kentorgbg/spree_report_per_variant'
 
   s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")

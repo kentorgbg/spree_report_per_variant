@@ -39,6 +39,7 @@ require 'spree_report_per_variant/factories'
 
 Todo
 -----
+* List reports per shop when multidomain is enabled through https://github.com/spree/spree-multi-domain
 * Complete feature spec 
 * More defined requirements in gemspec
 

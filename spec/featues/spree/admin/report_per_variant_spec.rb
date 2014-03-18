@@ -40,5 +40,44 @@ feature 'Report per variant', js: true do
 
   end
 
-  scenario "Two complete order with the same variant plus one other product"
+  scenario "Two complete order with the same variant plus one other product" do
+
+    #s = create(:stock_location_with_items)
+    
+    p1 = create(:product, :name => "Product 1")
+    p2 = create(:product, :name => "Product 2")
+    p3 = create(:product, :name => "Product 3")
+
+    v1_p1 = create(:base_variant, :product => p1, :price => 100)
+    v2_p1 = create(:base_variant, :product => p1, :price => 150)
+    
+    v1_p2 = create(:variant, :product => p2, :price => 10)
+
+
+    line_item1 = create(:line_item, :variant => v1_p1, :quantity => 2)
+    line_item2 = create(:line_item, :variant => v2_p1, :quantity => 1)
+    
+    line_item3 = create(:line_item, :variant => v1_p2, :quantity => 10)
+
+    #order1 = create(:order_with_line_items, :line_items => [line_item1, line_item2], :state => "complete")
+    #order2 = create(:order, :line_items => [line_item3], :state => "complete")
+    
+    # Funkar i testkörning
+    #o1 = create(:order, :line_items => [line_item1])
+    #o2 = create(:order, :line_items => [line_item2])
+    #o3 = create(:order, :line_items => [line_item3])
+
+    #o4 = create(:order, :line_items => [line_item1, line_item2])
+    #o5 = create(:order, :line_items => [line_item2, line_item3])
+    #o6 = create(:order, :line_items => [line_item3, line_item1])
+    
+
+    #o4 = create(:order_with_line_items, :line_items => [line_item1, line_item2], :state => "cart")
+
+
+    #order1
+    #require 'pry'; binding.pry
+    
+  end
+
 end

@@ -37,4 +37,14 @@ Simply add this require statement to your spec_helper:
 require 'spree_report_per_variant/factories'
 ```
 
+Todo
+-----
+* Complete feature spec 
+* More defined requirements in gemspec
+
+Requirements
+------------
+* Phantomjs - can be installed with e.g. macports
+
+
 Copyright (c) 2014 [name of extension creator], released under the New BSD License
